@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="CustomView">
+        <attr name="cv_gap" format="dimension"/>
+        <attr name="cv_view_height" format="dimension"/>
+        <attr name="cv_gravity" format="string"/>
+    </declare-styleable>
+</resources>
