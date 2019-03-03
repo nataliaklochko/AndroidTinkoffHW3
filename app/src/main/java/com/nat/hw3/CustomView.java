@@ -84,10 +84,10 @@ public class CustomView extends ViewGroup {
                 mLeftWidth += childWidth + gapAttr;
 
                 if ((mLeftWidth / deviceWidth) > rowCount) {
-                    maxHeight += childHeight + heightAttr;
+                    maxHeight += childHeight + gapAttr;
                     rowCount++;
                 } else {
-                    maxHeight = Math.max(maxHeight, childHeight);
+                    maxHeight = Math.max(maxHeight, childHeight + gapAttr);
                 }
                 childState = combineMeasuredStates(childState, child.getMeasuredState());
             }
